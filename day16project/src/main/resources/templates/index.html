@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todos</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+<div class ="container">
+    <div class ="row">
+        <div class ="column mt-5">
+        <h1>My TODO</h1>
+        </div>
+    </div>
+    <div>
+        <form action='#' th:action="@{/addTask}" method="post" th:object=>
+            <label>Add Task</label>
+            <input type ="text"/><br/>
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+    </form>
+</div>
+
+
+<body>
+    
+</body>
+</html>
